@@ -9,7 +9,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
  body {
-     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+     background: linear-gradient(-45deg, #c73e14, #8a1743, #23A6D5, #2f23d5);
      background-size: 400% 400%;
      animation: Gradient 15s ease infinite;
  }
@@ -115,7 +115,7 @@
      resize: none;
      font-size: 20px;
      font-weight: 600;
-     background-color: #7FFFD4;
+     background-color: #33a07c;
      text-transform: lowercase;
 
  }
@@ -144,9 +144,9 @@
 
  #btn__cripto:hover {
      transition: 0.3s;
-     border: 2px solid #FF1493;
+     border: 2px solid #ffad14;
      background-color: black;
-     color: #FF1493;
+     color: #aa4f7f;
  }
 
  #btn__cripto:active {
@@ -163,7 +163,7 @@
      border-radius: 10px;
      border: 3px solid black;
      outline: none;
-     background-color: #FF1493;
+     background-color: #830649;
      color: black;
      font-weight: 700;
      font-size: 21px;
@@ -174,7 +174,7 @@
  #btn__descripto:hover {
      border: 2px solid #00FFFF;
      background-color: black;
-     color: #00FFFF;
+     color: #114d4d;
  }
 
  #btn__descripto:active {
@@ -206,7 +206,7 @@
      font-size: 23px;
      font-weight: 600;
      padding: 6px;
-     background-color: #FFB5C5;
+     background-color: #26912f;
      border: 3px solid black;
      border-radius: 20px 20px;
      text-transform: lowercase;
@@ -245,8 +245,8 @@
  }
 
  #btn__copy:hover {
-     border: 2px solid #FFB5C5;
-     color: #FFB5C5;
+     border: 2px solid #b5baff;
+     color: #340d3b;
      outline: none;
      background-color: black;
  }

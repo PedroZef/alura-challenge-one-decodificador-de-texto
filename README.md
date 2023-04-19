@@ -23,7 +23,7 @@
 - "gaitober" => "gato"
 
 - A página deve ter campos para inserção do texto a ser criptografado ou descriptografado, e a pessoa usuária deve poder escolher entre as duas opções e resultado deve ser exibido na tela.
-<p align="center"><img src="./imgs/badge1.png" width="160" height="160" /></p>
+<p align="center"><img src="./imgs/badge1.png" width="140" height="140" /></p>
 
 ### Resultado do projeto
 
