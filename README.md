@@ -38,6 +38,9 @@
 - pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!"
 
 - "parabens por encarar esse desafio e ter finalizado ele com sucesso!"
+![GITHUB.IO]
+(https://pedrozef.github.io/alura-challenge-decodificador-de-texto)
+
 ### BADGES
 
 ![BAGDE GIT]
