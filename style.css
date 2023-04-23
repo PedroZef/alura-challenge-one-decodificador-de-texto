@@ -36,14 +36,11 @@
      margin: 0;
      display: flex;
      height: 12vh;
-
-
  }
 
  h1 {
      font-family: Arial, Helvetica, sans-serif;
      font-size: 15px;
-
  }
 
  footer {
@@ -55,7 +52,6 @@
      padding: 10px;
      font-size: 15px;
      height: 12vh;
-
  }
 
  footer p {
