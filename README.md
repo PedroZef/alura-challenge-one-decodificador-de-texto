@@ -39,7 +39,7 @@
 
 ## Git Pages
 ![GITHUB.IO]
-(https://pedrozef.github.io/alura-challenge-decodificador-de-texto)
+(https://pedrozef.github.io/alura-challenge-decodificador-de-texto/)
 
 ### BADGES
 
