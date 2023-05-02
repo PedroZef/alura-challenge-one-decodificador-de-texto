@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <title>Challenge - Decodificador de Texto</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? família= Lagosta &family= Roboto+Condensed:wght@700 & display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Challenge - Decodificador de Texto </title>
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>Decodificador de Texto - Challenge</h1> 
+      <img class="logoAlura" src="imgs/logoAlura.svg" alt="Logo da Alura" />
+      <h2>Challenge - Decodificador de Texto</h2>
     </header>
     <main>
-        <form>
-            <div class="text__box">
-                <label for="textInput"></label>
-                <textarea name="textInput" id="text__input" maxlength="1500" spellcheck="false"
-                    placeholder="Insira apenas letras minusculas e sem acento..." autocomplete="off"
-                    oninput="changeText(this.value)" required></textarea>
-            </div>
-            <div class="btn__crip">
-                <input type="button" value="Criptografar" id="btn__cripto" onclick="cripto()">
-                <input type="button" value="Descriptografar" id="btn__descripto" onclick="descripto()">
-            </div>
-        </form>
-
-        <div class="text__result">
-            <div class="out__box flipped">
-                <textarea id="out__text" disabled></textarea>
-            </div>
-            <div class="btn__copy">
-                <button id="btn__copy" onclick="copy()">Copiar</button>
-            </div>
+      <section>
+        <textarea
+          class="text-area"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu Texto "
+        ></textarea>
+        <div class="informacao">
+          <h5>Apenas letras minúsculas e sem acentos.</h5>
         </div>
+        <div class="botoes">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <textarea class="mensagem" cols="20" rows="10"></textarea>
+        <button class="btn-copiar">Copiar</button>
+      </section>
     </main>
-    <footer class="footer">
-        <a href="https://github.com/PedroZef" target="_blank"><img src="imgs/github.gif" alt="GitHub"></a>
-        <p class="corpyright">Desenvolvido por Pedro Zeferino da Silva - 2023</p><a
-            href="https://linkedin.com/in/pedro-zeferino-da-silva" target="_blank"><img src="imgs/linkedin.gif"
-                alt="Linkedin"></a>
-    </footer>
-    <script src="script.js" type="text/javascript"></script>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

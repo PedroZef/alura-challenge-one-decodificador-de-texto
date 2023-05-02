@@ -1,446 +1,97 @@
  * {
-     margin: 0;
-     padding: 0;
-     border-collapse: 0;
-     border: none;
-
+    background: #b9b3b3;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
  }
 
- @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
- body {
-     background: linear-gradient(-45deg, #c73e14, #8a1743, #23A6D5, #2f23d5);
-     background-size: 400% 400%;
-     animation: Gradient 15s ease infinite;
+ .logoAlura {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 20%;
  }
 
- @keyframes Gradient {
-     0% {
-         background-position: 0% 50%
-     }
-
-     50% {
-         background-position: 100% 50%
-     }
-
-     100% {
-         background-position: 0% 50%
-     }
- }
-
- header {
-     /* bottom: 0; */
-     font-family: 'Dancing Script', cursive;
-     align-items: center;
-     justify-content: center;
-     margin: 0;
-     display: flex;
-     height: 12vh;
- }
-
- h1 {
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 15px;
- }
-
- footer {
-     /* bottom: 0; */
-     font-family: Arial, Helvetica, sans-serif, cursive;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding: 10px;
-     font-size: 15px;
-     height: 12vh;
- }
-
- footer p {
-     margin: 0 10px;
- }
-
- footer img {
-     width: 20px;
-     height: 20px;
- }
-
- header h1 {
-     font-size: 50px;
-     text-align: center;
-     color: #000000;
-     font-family: 'Dancing Script', cursive;
+ h2 {
+   text-align:center;
+   
  }
 
  main {
-     height: 76vh;
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px
  }
 
- /* CONTAINER PARA DIIGTAR O TEXTO */
- main {
-     display: flex;
-     margin: 0 auto;
-     margin-top: 50px;
-     width: 70%;
-     height: 90vh;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     align-items: flex-start;
-
+ .text-area {
+    border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase; 
  }
 
- form {
-     height: 75vh;
-     width: 50%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     align-content: center;
+ ::placeholder { color: #0a3871; }
+ .text-area:focus {
+    outline: none;
  }
 
- .text__box {
-     width: 100%;
-     height: 71vh;
+ .mensagem {
+    background: white;
+    background-image:  url(/imgs/Figura.svg);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
  }
 
- #text__input {
-     padding: 6px;
-     border: 3px solid black;
-     border-radius: 20px 20px;
-     outline: none;
-     width: 95%;
-     height: 65vh;
-     resize: none;
-     font-size: 20px;
-     font-weight: 600;
-     background-color: #33a07c;
-     text-transform: lowercase;
+ .mensagem:focus {
+    outline: none;
 
  }
 
- #warning {
-     width: 100%;
+ .botoes {
+    display: flex;
+    margin-top: 18px;
  }
 
- .btn__crip {
-     margin-top: 20px;
- }
-
- #btn__cripto {
-     height: 50px;
-     width: 200px;
-     border-radius: 10px;
-     border: 3px solid black;
-     outline: none;
-     background-color: #00FFFF;
-     color: black;
-     font-weight: 700;
-     font-size: 21px;
+ .btn-desencriptar {
+     background: #D8DFE8;
+     border: 1px solid #0A3871;
+     border-radius: 24px;
+     color: #0A3871;
      cursor: pointer;
-     margin-right: 20px;
+     height: 67px;
+     margin-left: 30px;
+     width: 328px;
  }
 
- #btn__cripto:hover {
-     transition: 0.3s;
-     border: 2px solid #ffad14;
-     background-color: black;
-     color: #aa4f7f;
- }
-
- #btn__cripto:active {
-     border: 2px solid black;
-     color: black;
-     outline: none;
-     background-color: #FFFFFF;
-     transition: 0s;
- }
-
- #btn__descripto {
-     height: 50px;
-     width: 200px;
-     border-radius: 10px;
-     border: 3px solid black;
-     outline: none;
-     background-color: #830649;
-     color: black;
-     font-weight: 700;
-     font-size: 21px;
+ .btn-encriptar {
+     background-color: #0A3871;
+     border: 1px solid #0A3871;
+     border-radius: 24px;
+     color: white;
      cursor: pointer;
-     transition: 0.3s;
+     height: 67px;
+     width: 328px;
  }
 
- #btn__descripto:hover {
-     border: 2px solid #00FFFF;
-     background-color: black;
-     color: #114d4d;
- }
-
- #btn__descripto:active {
-     border: 2px solid black;
-     color: black;
-     outline: none;
-     background-color: #FFFFFF;
-     transition: 0s;
- }
-
- /* CONTAINER DO TEXTO CODIFICADO/DECODIFICADO */
- .text__result {
-     height: 75vh;
-     width: 50%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     align-content: center;
-
- }
-
- .out__box {
-     width: 100%;
-     height: 71vh;
-     color: black;
- }
-
- #out__text {
-     font-size: 23px;
-     font-weight: 600;
-     padding: 6px;
-     background-color: #26912f;
-     border: 3px solid black;
-     border-radius: 20px 20px;
-     text-transform: lowercase;
-     overflow-y: auto;
-     overflow-x: hidden;
-     word-wrap: break-word;
-     resize: none;
-     color: black;
-     outline: none;
-     text-align: center;
-     width: 95%;
-     height: 65vh;
- }
-
- .flipped {
-     direction: rtl;
- }
-
- .btn__copy {
-     margin-top: 18px;
- }
-
- #btn__copy {
-     height: 50px;
-     width: 200px;
-     border-radius: 10px;
-     border: 3px solid black;
-     color: black;
-     outline: none;
-     font-weight: 700;
-     background-color: #7CFC00;
-     font-size: 21px;
+ .btn-copiar {
+     border: 1px solid #0A3871;
+     border-radius: 24px;
+     color: #0A3871;
      cursor: pointer;
-     transition: 0.3s;
-
+     height: 67px;
+     margin-left: 108px;
+     margin-top: 402px;
+     position: absolute;
+     width: 336px;
  }
 
- #btn__copy:hover {
-     border: 2px solid #b5baff;
-     color: #340d3b;
-     outline: none;
-     background-color: black;
- }
-
- #btn__copy:active {
-     border: 2px solid black;
-     color: black;
-     outline: none;
-     background-color: #FFFFFF;
-     transition: 0s;
- }
-
- /* MEDIA QUERY */
- @media (max-width: 1230px) {
-     #btn__copy {
-         height: 50px;
-         width: 200px;
-     }
-
-     #btn__cripto {
-         height: 50px;
-         width: 150px;
-         margin-right: 0px;
-         font-size: 19px;
-     }
-
-     #btn__descripto {
-         height: 50px;
-         width: 150px;
-         font-size: 19px;
-     }
- }
-
- @media (max-width: 912px) {
-     #btn__copy {
-         height: 70px;
-         width: 200px;
-         margin-top: 15px;
-     }
-
-     #text__input {
-         width: 90%;
-     }
-
-     #btn__cripto {
-         height: 50px;
-         width: 290px;
-         font-size: 24px;
-         margin: 0;
-
-     }
-
-     #btn__descripto {
-         height: 50px;
-         width: 290px;
-         font-size: 23px;
-     }
- }
-
- @media (max-width: 768px) {
-     #btn__copy {
-         height: 80px;
-         width: 130px;
-         margin-top: 12px;
-     }
-
-     #text__input {
-         width: 85%;
-     }
-
-     #btn__cripto {
-         height: 50px;
-         width: 240px;
-         font-size: 24px;
-         margin: 0;
-     }
-
-     #btn__descripto {
-         height: 50px;
-         width: 240px;
-         font-size: 24px;
-     }
- }
-
- @media (max-width: 605px) {
-     #text__input {
-         width: 85%;
-     }
-
-     #btn__copy {
-         height: 75px;
-         width: 130px;
-     }
-
-     #btn__cripto {
-         height: 50px;
-         width: 180px;
-         font-size: 20px;
-         margin: 0;
-     }
-
-     #btn__descripto {
-         height: 50px;
-         width: 180px;
-         font-size: 20px;
-     }
- }
-
- @media (max-width: 490px) {
-     .text__box {
-         width: 90%;
-     }
-
-     #text__input {
-         width: 85%;
-     }
-
-     #btn__copy {
-         height: 80px;
-         width: 80px;
-         margin-top: 12px;
-     }
-
-     #btn__cripto {
-         height: 50px;
-         width: 140px;
-         font-size: 18px;
-         margin: 0;
-         box-shadow: 3px 2px 0px black;
-     }
-
-     #btn__descripto {
-         height: 50px;
-         width: 140px;
-         font-size: 17px;
-         box-shadow: 3px 2px 0px black;
-     }
-
-     header {
-         margin: 0 auto;
-         margin-top: 32px;
-         height: fit-content;
-         width: 80%;
-         flex-wrap: wrap;
-         align-items: center;
-         justify-content: space-evenly;
-     }
-
-     header h1 {
-         font-size: 32px;
-     }
-
-     .info img {
-         height: 60px;
-         width: 60px;
-     }
- }
-
- @media (max-width: 350px) {
-     .text__box {
-         width: 75%;
-     }
-
-     #text__input {
-         width: 85%;
-     }
-
-     #btn__copy {
-         height: 75px;
-         width: 80px;
-     }
-
-     #btn__cripto {
-         height: 50px;
-         width: 110px;
-         font-size: 16px;
-         margin: 0;
-         box-shadow: 3px 2px 0px black;
-     }
-
-     #btn__descripto {
-         height: 50px;
-         width: 110px;
-         font-size: 13px;
-         box-shadow: 3px 2px 0px black;
-     }
-
-     header {
-         margin: 0 auto;
-         margin-top: 32px;
-         height: fit-content;
-         width: 30%;
-         flex-wrap: wrap;
-     }
-
-     header h1 {
-         font-size: 32px;
-
-     }
-
+ .informacao {
+     color: #495057;
+     font-size: 18px;
  }

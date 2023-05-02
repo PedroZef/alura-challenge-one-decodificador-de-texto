@@ -3,7 +3,7 @@
 
 ## Sobre o projeto
 
-- Codificador/Decodificador de texto Challenge usando HTML, CSS e JavaScript.
+- Codificador/Decodificador de texto Challenge -Decodificador de Texto usando HTML, CSS e JavaScript.
 - Durante estas duas semanas, vamos trabalhar em uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.
 
 - As "chaves" de criptografia que utilizaremos são:
@@ -14,6 +14,7 @@
 - A letra "u" é convertida para "ufat"
 
 ### Requisitos:
+
 - Deve funcionar apenas com letras minúsculas
 - Não devem ser utilizados letras com acentos nem caracteres especiais
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
@@ -33,16 +34,16 @@
 - "gaitober" => "gato"
   
 #### Outro Exemplo:
+
 - pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!"
 
 - "parabens por encarar esse desafio e ter finalizado ele com sucesso!"
 
 ## Git Pages
-![GITHUB.IO]
-(https://pedrozef.github.io/alura-challenge-decodificador-de-texto/)
+
+![GITHUB.IO(https://pedrozef.github.io/alura-challenge-decodificador-de-texto/)]
 
 ### BADGES
 
 ![BAGDE GIT]
-![Gif](imgs/Challenge_Decodificador.gif)
-(https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211139Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_br&utm_medium=email&utm_source=RD+Station)
+![Gif(https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211139Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_br&utm_medium=email&utm_source=RD+Station)]
