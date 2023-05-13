@@ -1,397 +1,397 @@
-* { 
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-   font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-   color:#E5E5E5;
+  color: #e5e5e5;
 
-   height: 100vh;
-   width: 100%;
-
-   background: linear-gradient(45deg, #33547e, #E5E5E5);
-   animation: gradient 10s ease infinite;
-   background-size: 200% 200%;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #0a3871, #e5e5e5);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
 }
 
-body, textarea, button {
-   font-family: 'Inter', sans-serif;
+body,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
 }
 
 header {
-   display: flex;
-   text-align: center;
-   width: 100%;
-   height: 8rem;
-   
-   background-color: #33547e;
-   align-items: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 8rem;
 
-   box-shadow: 0 2px 5px 2px rgba(12, 12, 12, 0.08);
-
-   position: fixed;
+  background-color: #407e33;
+  align-items: center;
+  box-shadow: 0 2px 5px 2px rgba(12, 12, 12, 0.08);
+  position: fixed;
 }
 
 .logo {
-   width: 6.2rem;
-   height: 8.2rem;
-
-   margin-left: 1.6rem;
-   padding-top: 0.5rem;
+  width: 10.2rem;
+  height: 8.2rem;
+  margin-left: 1.6rem;
+  padding-top: 0.5rem;
 }
 
 header h1 {
-   font-size: 1.8rem;
-   margin-left: 10rem;
-   align-items: center;
-   text-shadow: 1px 1px 2px black;
+  font-size: 1.8rem;
+  margin-left: 10rem;
+  align-items: center;
+  text-shadow: 1px 1px 2px rgb(26, 24, 24);
 }
 
 .text {
-   width: 34.3rem;
-   height: 30rem;
+  width: 34.3rem;
+  height: 30rem;
 
-   border: none;
-   background: none;
+  border: none;
+  background: none;
+  margin: 12rem 1.6rem 0 1.6rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4.8rem;
 
-   margin: 12rem 1.6rem 0 1.6rem;
-   
-   font-size: 3.2rem;
-   font-weight: 400;
-   line-height: 4.8rem;
-
-   color: #E5E5E5;
-   text-shadow: 1px 1px 2px black;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 2px black;
 }
 
 .text::placeholder {
-   font-size: 3.2rem;
-   font-weight: 400;
-   line-height: 4.8rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4.8rem;
 
-   color: #E5E5E5;
-   text-shadow: 1px 1px 2px black;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 2px black;
 }
 
 .text:focus {
-   outline: none;
+  outline: none;
 }
 
 .information {
-   color: #E5E5E5;
-   text-shadow: 2px 2px 2px black;
+  color: #e5e5e5;
+  text-shadow: 2px 2px 2px black;
 
-   font-size: 1.3rem;
-   line-height: 1.8rem;
+  font-size: 2.3rem;
+  line-height: 7.8rem;
 }
 
 .information img {
-   margin: 3rem 2 2 5rem;
-   color: black;
+  margin: 3rem 2 2 5rem;
+  color: black;
 }
 
 .buttons {
-   display: inline;
+  display: inline;
+}
+
+button:hover {
+  border: 2px solid var(--corsegundaria);
+  transition: 0.5s all;
 }
 
 .btn-encrypt {
-   height: 6.7rem;
-   width: 32.8rem;
+  height: 6.7rem;
+  width: 32.8rem;
 
-   background-color: #0A3871;
-   color: white;
-   text-shadow: 1px 1px 1px black;
-   
-   border: 1.5px solid #e5e5e596;
-   border-radius: 2.4rem;
+  background-color: #0a3871;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 
-   cursor: pointer;
-   margin: 1.6rem 1.6rem 0 3rem;
+  border: 1.5px solid #e5e5e596;
+  border-radius: 2.4rem;
 
-   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  margin: 1.6rem 1.6rem 0 3rem;
+
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-encrypt:hover {
-   background: #24548f;
+  background: #24548f;
 }
 
 .btn-decrypt {
-   height: 6.7rem;
-   width: 32.8rem;
+  height: 6.7rem;
+  width: 32.8rem;
 
-   background-color: #E5E5E5;
-   color: #0A3871;
-   font-weight: 600;
-   
-   border: 2px solid #0a3871d2;
-   border-radius: 2.4rem;
-   
-   cursor: pointer;
-   margin: 2.4rem 1.6rem 0 3rem;
+  background-color: #e5e5e5;
+  color: #0a3871;
+  font-weight: 600;
 
-   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
+  border: 2px solid #0a3871d2;
+  border-radius: 2.4rem;
+
+  cursor: pointer;
+  margin: 2.4rem 1.6rem 0 3rem;
+
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-decrypt:hover {
-   background: #92b3da;
+  background: #92b3da;
 }
 
 .message {
-   border: none;
-   border-radius: 2.4rem;
-   color: #0A3871;
+  border: none;
+  border-radius: 2.4rem;
+  color: #0a3871;
 
-   margin: 6.4rem 1.6rem 4rem 3rem;
-   padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 6.4rem 1.6rem 4rem 3rem;
+  padding: 3.5rem 0.5rem 0.5rem 0.5rem;
 
-   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .message:focus {
-   outline: none;
+  outline: none;
 }
 
 .message::placeholder {
-   font-size: 2.4rem;
-   line-height: 2.8rem;
-   font-weight: 700;
-   
-   color: #343A40;
-   
-   text-align: center;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 700;
 
-   padding-top: 3.2rem;
+  color: #343a40;
+
+  text-align: center;
+
+  padding-top: 3.2rem;
 }
 
 .boneco {
-   border: none;
-   border-radius: 2.4rem;
-   color: #0A3871;
+  border: none;
+  border-radius: 2.4rem;
+  color: #0a3871;
 
-   margin: 6.4rem 1.6rem 4rem 3rem;
-   padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 6.4rem 1.6rem 4rem 3rem;
+  padding: 3.5rem 0.5rem 0.5rem 0.5rem;
 
-   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-copy {
-   display: none;
-   background: none;
-   color: #0A3871;
-   
-   border-radius: 2.4rem;
-   
-   font-weight: 600;
-   
-   border: 2px solid #0a3871d2;
-   cursor: pointer;
-   
-   width: 27.9rem;
-   height: 6.7rem;
+  display: none;
+  background: none;
+  color: #0a3871;
 
-   position: absolute;
+  border-radius: 2.4rem;
 
-   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+
+  border: 2px solid #0a3871d2;
+  cursor: pointer;
+
+  width: 27.9rem;
+  height: 6.7rem;
+
+  position: absolute;
+
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-copy:hover {
-   background: #89a8ce6b;
+  background: #89a8ce6b;
 }
 
 footer {
-   display: flex;
-   font-size: 1.4rem;
-   margin: 3rem 0 0 5rem;
-   text-align: center;
-   justify-content: center;
+  display: flex;
+  font-size: 1.4rem;
+  margin: 3rem 0 0 5rem;
+  text-align: center;
+  justify-content: center;
 }
 
 footer p {
-   display: flex;
-   align-items: center;
-   text-align: center;
-   text-shadow: 1px 1px black;
-   font-weight: 700;
-   margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  font-weight: 700;
+  margin-right: 0.8rem;
 }
 
 footer a {
-   color: black;
-   text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 @keyframes gradient {
   0% {
-     background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-     background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-     background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
 @media (max-width: 399px) {
-   header {
-       width: 100%;
-   }
+  header {
+    width: 100%;
+  }
 
-   footer {
-       position: fixed;
-   }
+  footer {
+    position: fixed;
+  }
 }
 
 @media (min-width: 768px) {
-   
-   header {
-       width: 100%;
-   }
+  header {
+    width: 100%;
+  }
 
-   .logo {
-       height: 5rem;
-       margin-left: 4rem;
-   }
+  .logo {
+    height: 5rem;
+    margin-left: 4rem;
+  }
 
-   main {
-       display: inline;
-   }
+  main {
+    display: inline;
+  }
 
-   .text {
-       width: 68.8rem;
-       margin: 16rem 0 0 4rem;
-   }
+  .text {
+    width: 68.8rem;
+    margin: 16rem 0 0 4rem;
+  }
 
-   .information img {
-       margin-left: 4rem;
-   }
+  .information img {
+    margin-left: 4rem;
+  }
 
-   .buttons {
-       align-items: center;
-   }
+  .buttons {
+    align-items: center;
+  }
 
-   .message {
-       border-radius: 3.2rem;
-       width: 68.8rem;
+  .message {
+    border-radius: 3.2rem;
+    width: 68.8rem;
 
-       margin-left: 4rem;
-       padding: 3.2rem;
-   }
+    margin-left: 4rem;
+    padding: 3.2rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  header {
+    width: 100%;
+  }
 
-   header {
-       width: 100%;
-   }
+  .logo {
+    margin-left: 8.4rem;
+  }
 
-   .logo {
-       margin-left: 8.4rem;
-   }
+  main {
+    display: flex;
+  }
 
-   main {
-       display: flex;
-   }
+  section {
+    width: 65.6rem;
+  }
 
-   section {
-       width: 65.6rem;
-   }
+  .text {
+    margin-left: 4rem;
+    width: 58rem;
+  }
 
-   .text {
-       margin-left: 4rem;
-       width: 58rem;
-   }
+  .information img {
+    margin: 6rem 0 0 4rem;
+  }
 
-   .information img {
-       margin: 6rem 0 0 4rem;
-   }
+  .buttons {
+    display: flex;
+    width: 65.6rem;
+  }
 
-   .buttons {
-       display: flex;
-       width: 65.6rem;
-   }
+  .btn-decrypt {
+    background-color: #d8dfe8;
+    color: #0a3871;
+  }
 
-   .btn-decrypt {
-       background-color: #D8DFE8;
-       color: #0A3871;
-   }
+  .message {
+    border-radius: 3.2rem;
+    height: 52rem;
+    width: 34rem;
 
-   .message {
-       border-radius: 3.2rem;
-       height: 52rem;
-       width: 34rem;
-       
-       margin: 12rem 2rem 2rem 4rem;
-   }
+    margin: 12rem 2rem 2rem 4rem;
+  }
 
-   .message::placeholder {    
-       padding-top: 20rem;
-   }
+  .message::placeholder {
+    padding-top: 20rem;
+  }
 
-   .btn-copy {
-       display: inline;
-       position: absolute;
+  .btn-copy {
+    display: inline;
+    position: absolute;
 
-       top: 54rem;
-       right: 0.1rem;
-   }
+    top: 54rem;
+    right: 0.1rem;
+  }
 }
 
 @media (min-width: 1280px) {
-   .message {        
-       margin: 12rem 2rem 2rem 22rem;
-   }
+  .message {
+    margin: 12rem 2rem 2rem 22rem;
+  }
 
-   .btn-copy {
-       right: 9.5rem;
-   }
+  .btn-copy {
+    right: 9.5rem;
+  }
 }
 
 @media (min-width: 1366px) {
-   .btn-copy {
-       right: 16rem;
-   }
+  .btn-copy {
+    right: 16rem;
+  }
 }
 
 @media (min-width: 1440px) {
+  .text {
+    margin-left: 20rem;
+    height: 26rem;
+    width: 56rem;
+  }
 
-   .text {
-       margin-left: 20rem;
-       height: 26rem;
-       width: 56rem;
-   }
+  .information img {
+    margin: 1rem 0 0 20rem;
+  }
 
-   .information img {
-       margin: 1rem 0 0 20rem;
-   }
+  .buttons {
+    margin-left: 14rem;
+  }
 
-   .buttons {
-       margin-left: 14rem;
-   }
+  .message {
+    width: 40rem;
+    height: 43.5rem;
+    margin-left: 28rem;
+  }
 
-   .message {
-       width: 40rem;
-       height: 43.5rem;
-       margin-left: 28rem;
-   }
+  .message::placeholder {
+    padding-top: 10rem;
+  }
 
-   .message::placeholder {    
-       padding-top: 10rem;
-   }
-
-   .btn-copy {
-       top: 44rem;
-       right: 16rem;
-   }
+  .btn-copy {
+    top: 44rem;
+    right: 16rem;
+  }
 }
 
 @media (min-width: 1600px) {
-   .btn-copy {
-       right: 41rem;
-   }
+  .btn-copy {
+    right: 41rem;
+  }
 }
