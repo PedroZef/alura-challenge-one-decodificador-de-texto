@@ -58,7 +58,6 @@ function decrypt(decryptString) {
 
   return decryptString;
 
-  console.log("decrypt")
 }
 
 function copy() {
