@@ -4,48 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="imgs/logoAlura.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css" />
     <title>Challenge - Decodificador de Texto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <img class="logoAlura" src="imgs/logoAlura.svg" alt="Logo da Alura" />
-      <h1>Challenge - Decodificador de Texto</h1>
+      <img class="logo" src="imgs/logoAlura.svg" alt="Logo da Alura" />
+      <h1>| 🔒 Decodificador de textos | </h1>
     </header>
+
     <main>
       <section>
         <textarea
-          class="text-area"
+          class="text"
           cols="41"
           rows="4"
-          placeholder="Digite seu Texto "
+          placeholder="Digite o seu texto"
         ></textarea>
-        <div class="informacao">
-          <h6>Apenas letras minúsculas e sem acentos.</h6>
+
+        <div class="information">
+          <h6>
+            <img src="imgs/symbol.svg" alt="" />
+            Apenas letras minúsculas e sem acento.
+          </h6>
         </div>
-        <div class="botoes">
-          <button class="btn-encriptar" onclick="btnEncriptar()">
+
+        <div class="buttons">
+          <button class="btn-encrypt" onclick="btnEncrypt()">
             Criptografar
           </button>
-          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+          <button class="btn-decrypt" onclick="btnDecrypt()">
             Descriptografar
           </button>
         </div>
       </section>
 
       <section>
-        <textarea class="mensagem" cols="20" rows="10"></textarea>
-        <button class="btn-copiar">Copiar</button>
+        <textarea
+          class="message"
+          cols="42"
+          rows="10"
+          placeholder="Nenhuma mensagem encontrada"
+        ></textarea>
+        <button class="btn-copy" onclick="copy()">Copiar</button>
       </section>
     </main>
-     <footer class="footer">
-        <a href="https://github.com/PedroZef" target="_blank"><img src="imgs/github.gif" alt="GitHub"></a>
-        <p class="corpyright">Desenvolvido por Pedro Zeferino da Silva - 2023</p><a
-            href="https://linkedin.com/in/pedro-zeferino-da-silva" target="_blank"><img src="imgs/linkedin.gif"
-                alt="Linkedin"></a>
+    <footer>
+      <p> Desenvolvido por Pedro Zeferino da Silva</p><a href="https://www.linkedin.com/in/pedro-zeferino-da-silva/" target="_blank">
+        <img src="https://img.icons8.com/3d-fluency/24/linkedin.png" alt="linkedin"/>
+      </a>
+      <a href="https://github.com/PedroZef" target="_blank">
+        <img src="https://img.icons8.com/3d-fluency/24/github.png" alt="github"/>
+      </a>
     </footer>
 
     <script src="script.js"></script>

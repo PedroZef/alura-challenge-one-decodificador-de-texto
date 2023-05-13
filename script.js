@@ -1,52 +1,74 @@
-const textArea = document.querySelector(".text-area");
-const mensagem = document.querySelector(".mensagem");
+const text = document.querySelector(".text");
+const message = document.querySelector(".message");
 
-// As "chaves" de criptografia que utilizaremos são:
-// `A letra "e" é convertida para "enter"`
-// `A letra "i" é convertida para "imes"`
-// `A letra "a" é convertida para "ai"`
-// `A letra "o" é convertida para "ober"`
-// `A letra "u" é convertida para "ufat"`
-
-function btnEncriptar() {
-    const textoEncriptado = encriptar(textArea.value);
-    mensagem.value = textoEncriptado;
-    textArea.value = "";
+function btnEncrypt() {
+  const encryptedText = encrypt(text.value);
+  message.value = encryptedText;
+  text.value = "";
 }
 
+function encrypt(encryptedString) {
+  let matrixCode = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"],
+  ];
 
-function encriptar(stringEncriptada) {
+  encryptedString = encryptedString.toLowerCase();
 
-    let matrizCodigo = [["e" , "enter"] , ["i" , "imes"], ["a" ,"ai"] , ["o" , "ober"], ["u" , "ufat"]];
-    stringEncriptada = stringEncriptada.toLowerCase();
-
-    for(let i = 0; i < matrizCodigo.length; i++) {
-        if(stringEncriptada.includes(matrizCodigo[i][0])) {
-            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
-        }
+  for (let i = 0; i < matrixCode.length; i++) {
+    if (encryptedString.includes(matrixCode[i][0])) {
+      encryptedString = encryptedString.replaceAll(
+        matrixCode[i][0],
+        matrixCode[i][1]
+      );
     }
+  }
 
-    return stringEncriptada;
+  return encryptedString;
 }
 
-
-function btnDesencriptar() {
-    const textoDesencriptado = desencriptar(textArea.value);
-    mensagem.value = textoDesencriptado;
-    textArea.value = "";
+function btnDecrypt() {
+  const decryptText = decrypt(message.value);
+  text.value = decryptText;
+  message.value = "";
 }
 
+function decrypt(decryptString) {
+  let matrixCode = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"],
+  ];
 
-function desencriptar(stringDesencriptada) {
+  decryptString = decryptString.toLowerCase();
 
-    let matrizCodigo = [["e" , "enter"] , ["i" , "imes"], ["a" ,"ai"] , ["o" , "ober"], ["u" , "ufat"]];
-    stringDesencriptada = stringDesencriptada.toLowerCase();
-
-    for(let i = 0; i < matrizCodigo.length; i++) {
-        if(stringDesencriptada.includes(matrizCodigo[i][1])) {
-            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
-        }
+  for (let i = 0; i < matrixCode.length; i++) {
+    if (decryptString.includes(matrixCode[i][1])) {
+      decryptString = decryptString.replaceAll(
+        matrixCode[i][1],
+        matrixCode[i][0]
+      );
     }
+  }
 
-    return stringDesencriptada;
+  return decryptString;
+
+  console.log("decrypt")
+}
+
+function copy() {
+  if (message.value !== "") {
+    message.select();
+    message.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(message.value);
+
+    alert(message.value + " foi copiado!");
+
+    message.value = "";
+  }
 }
