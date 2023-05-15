@@ -8,11 +8,11 @@
 
 :root {
   font-size: 62.5%;
+  border: var(--corsegundaria);
 }
 
 body {
   color: #e5e5e5;
-
   height: 100vh;
   width: 100%;
   background: linear-gradient(45deg, #0a3871, #e5e5e5);
@@ -62,7 +62,6 @@ header h1 {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 4.8rem;
-
   color: #e5e5e5;
   text-shadow: 1px 1px 2px black;
 }
@@ -71,7 +70,6 @@ header h1 {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 4.8rem;
-
   color: #e5e5e5;
   text-shadow: 1px 1px 2px black;
 }
@@ -84,7 +82,7 @@ header h1 {
   color: #e5e5e5;
   text-shadow: 2px 2px 2px black;
 
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   line-height: 7.8rem;
 }
 
@@ -106,13 +104,11 @@ button:hover {
   height: 6.7rem;
   width: 32.8rem;
 
-  background-color: #0a3871;
+  background-color: #0507aa;
   color: white;
   text-shadow: 1px 1px 1px black;
-
   border: 1.5px solid #e5e5e596;
   border-radius: 2.4rem;
-
   cursor: pointer;
   margin: 1.6rem 1.6rem 0 3rem;
 
@@ -128,58 +124,37 @@ button:hover {
   width: 32.8rem;
 
   background-color: #e5e5e5;
-  color: #0a3871;
+  color: #714d0a;
   font-weight: 600;
-
-  border: 2px solid #0a3871d2;
+  border: 2px solid #33710ad2;
   border-radius: 2.4rem;
-
   cursor: pointer;
   margin: 2.4rem 1.6rem 0 3rem;
-
   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-decrypt:hover {
-  background: #92b3da;
+  background: #da9292;
 }
 
 .message {
   border: none;
   border-radius: 2.4rem;
   color: #0a3871;
-
+  text-align: center;
   margin: 6.4rem 1.6rem 4rem 3rem;
   padding: 3.5rem 0.5rem 0.5rem 0.5rem;
-
   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
-.message:focus {
-  outline: none;
-}
-
 .message::placeholder {
-  font-size: 2.4rem;
+  font-size: 1.2rem;
   line-height: 2.8rem;
   font-weight: 700;
 
   color: #343a40;
-
   text-align: center;
-
   padding-top: 3.2rem;
-}
-
-.boneco {
-  border: none;
-  border-radius: 2.4rem;
-  color: #0a3871;
-
-  margin: 6.4rem 1.6rem 4rem 3rem;
-  padding: 3.5rem 0.5rem 0.5rem 0.5rem;
-
-  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-copy {
@@ -188,18 +163,14 @@ button:hover {
   color: #0a3871;
 
   border-radius: 2.4rem;
-
   font-weight: 600;
-
-  border: 2px solid #0a3871d2;
+  border: 1px solid #c2460dd2;
   cursor: pointer;
 
   width: 27.9rem;
   height: 6.7rem;
-
-  position: absolute;
-
-  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
+  align-items: center;
+  box-shadow: 0.3rem 0.3rem 3rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-copy:hover {
@@ -208,7 +179,7 @@ button:hover {
 
 footer {
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 3rem 0 0 5rem;
   text-align: center;
   justify-content: center;
@@ -337,7 +308,7 @@ footer a {
   .btn-copy {
     display: inline;
     position: absolute;
-
+    align-items: center;
     top: 54rem;
     right: 0.1rem;
   }
@@ -349,13 +320,13 @@ footer a {
   }
 
   .btn-copy {
-    right: 9.5rem;
+    right: 5.5rem;
   }
 }
 
 @media (min-width: 1366px) {
   .btn-copy {
-    right: 16rem;
+    right: 12rem;
   }
 }
 
@@ -386,12 +357,12 @@ footer a {
 
   .btn-copy {
     top: 44rem;
-    right: 16rem;
+    right: 12rem;
   }
 }
 
 @media (min-width: 1600px) {
   .btn-copy {
-    right: 41rem;
+    right: 40rem;
   }
 }
