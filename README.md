@@ -34,7 +34,7 @@
 - "gato" => "gaitober"
 - "gaitober" => "gato"
   
-#### Outro Exemplo
+#### Exemplo do Desafio
 
 - pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!"
 
@@ -42,8 +42,8 @@
 
 ##### Git Pages
 
-![GITHUB.IO(https://pedrozef.github.io/alura-challenge-one-decodificador-de-texto/)]
+![(https://pedrozef.github.io/alura-challenge-one-decodificador-de-texto/)]
 
-##### [BAGDE GIT]
+##### [BAGDE DO CHALLENGE]
 
-![Gif(https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211139Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_br&utm_medium=email&utm_source=RD+Station)]
+![(https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211139Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_br&utm_medium=email&utm_source=RD+Station)]

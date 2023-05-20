@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
   font-size: 62.5%;
-  border: var(--corsegundaria);
+  color: var(--corsegundaria);
 }
 
 body {
-  color: #e5e5e5;
+  
   height: 100vh;
   width: 100%;
   background: linear-gradient(45deg, #0a3871, #e5e5e5);
@@ -82,7 +82,7 @@ header h1 {
   color: #e5e5e5;
   text-shadow: 2px 2px 2px black;
 
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 7.8rem;
 }
 
@@ -116,7 +116,7 @@ button:hover {
 }
 
 .btn-encrypt:hover {
-  background: #24548f;
+  background: #eb240a;
 }
 
 .btn-decrypt {
@@ -126,7 +126,7 @@ button:hover {
   background-color: #e5e5e5;
   color: #714d0a;
   font-weight: 600;
-  border: 2px solid #33710ad2;
+  border: 2px solid #eb0619d2;
   border-radius: 2.4rem;
   cursor: pointer;
   margin: 2.4rem 1.6rem 0 3rem;
@@ -134,7 +134,7 @@ button:hover {
 }
 
 .btn-decrypt:hover {
-  background: #da9292;
+  background: #acb80d;
 }
 
 .message {
@@ -148,10 +148,10 @@ button:hover {
 }
 
 .message::placeholder {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   line-height: 2.8rem;
-  font-weight: 700;
-
+  font-weight: 600;
+  border-radius: 2.4rem;
   color: #343a40;
   text-align: center;
   padding-top: 3.2rem;
@@ -169,12 +169,11 @@ button:hover {
 
   width: 27.9rem;
   height: 6.7rem;
-  align-items: center;
-  box-shadow: 0.3rem 0.3rem 3rem rgba(0, 0, 0, 0.6);
+
 }
 
 .btn-copy:hover {
-  background: #89a8ce6b;
+  background: #12ad04d3;
 }
 
 footer {
@@ -232,7 +231,7 @@ footer a {
   }
 
   main {
-    display: inline;
+    display: inline-block;
   }
 
   .text {
@@ -310,7 +309,8 @@ footer a {
     position: absolute;
     align-items: center;
     top: 54rem;
-    right: 0.1rem;
+    left: 2.1;
+    right: 2.1rem;
   }
 }
 
@@ -320,7 +320,7 @@ footer a {
   }
 
   .btn-copy {
-    right: 5.5rem;
+    right: 3.5rem;
   }
 }
 
@@ -338,7 +338,7 @@ footer a {
   }
 
   .information img {
-    margin: 1rem 0 0 20rem;
+    margin: 1rem 0 0 2rem;
   }
 
   .buttons {
@@ -363,6 +363,6 @@ footer a {
 
 @media (min-width: 1600px) {
   .btn-copy {
-    right: 40rem;
+    right: 20rem;
   }
 }
